@@ -1,0 +1,1 @@
+This database-excersises repo contains practice for MySQL operations.
