@@ -32,10 +32,22 @@ select * from dept_manager;
 select * from salaries;
 select * from employees;
 select * from titles;
-/*    Which table(s) do you think contain a numeric type column? (Write this question and your answer in a comment)
-    Which table(s) do you think contain a string type column? (Write this question and your answer in a comment)
-    Which table(s) do you think contain a date type column? (Write this question and your answer in a comment)
-    What is the relationship between the employees and the departments tables? (Write this question and your answer in a comment)
-    Show the SQL that created the dept_manager table. Write the SQL it takes to show this as your exercise solution. */
+# strings, numeric type and datetime are found in these tables. 
+
+# Which table(s) do you think contain a numeric type column? (Write this question and your answer in a comment)
+# emp_no, from_date, to_date, salary and hire_date all have numeric values.
+
+
+# Which table(s) do you think contain a string type column? (Write this question and your answer in a comment)
+# first_name, last_name, gender, dept_no, dept_name all have string values.
+
+# Which table(s) do you think contain a date type column? (Write this question and your answer in a comment)
+# to_date, hire_date
+
+# What is the relationship between the employees and the departments tables? (Write this question and your answer in a comment)
+# the relationship seems to be they are linked by emp_no and dept_no as keys.
+
+# Show the SQL that created the dept_manager table. Write the SQL it takes to show this as your exercise solution.
+show create table dept_manager;
     
     
