@@ -21,7 +21,7 @@ your second page, etc. Update the query to find the tenth page of results. */
 select first_name, last_name, hire_date, birth_date from employees
 where hire_date between '1990-1-1' and '1999-12-31' and birth_date like '%-12-25'
 order by hire_date
-limit 50;
+limit 5 offset 45;
 
 
 
