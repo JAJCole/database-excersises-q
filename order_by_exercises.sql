@@ -50,8 +50,11 @@ select distinct emp_no, last_name from employees where last_name not like '%qu%'
 select emp_no, first_name, last_name from employees 
 where first_name in ('Irena', 'Vidya', 'Maya')
 order by first_name;
-# the first/last name of the first row: Irena Reuten
-# the first/last name of the last row: Vidya Simmen
+# the first/last name of the first row: Irena Reutenauer
+select emp_no, first_name, last_name from employees
+where first_name in ('Irena', 'Vidya', 'Maya')
+order by first_name DESC;
+# the first/last name of the last row: Vidya Awdeh
 
 # Find all employees with first names 'Irena', 'Vidya', or 'Maya', and order your results returned by first name and then last name. In your comments, answer: What was the first and last name in the first row of the results? What was the first and last name of the last person in the table?
 select emp_no, first_name, last_name from employees
