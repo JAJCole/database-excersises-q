@@ -87,12 +87,20 @@ order by hire_date DESC;
 # newest hire: Teiji Eldridge
 # oldest hire: Sergi Erde
 
-# Find all employees hired in the 90s and born on Christmas. Sort the results so that the oldest employee who was hired last is the first result. Enter a comment with the number of employees returned, the name of the oldest employee who was hired last, and the name of the youngest employee who was hired first.
+# Find all employees hired in the 90s and born on Christmas. 
+# Sort the results so that the oldest employee who was hired last is 
+# the first result. Enter a comment with the number of employees returned, the name of the oldest employee who was hired last, and the name of the youngest employee who was hired first.
 select hire_date, first_name, last_name, birth_date from employees
 where hire_date between '1990-1-1' and '1999-12-31'
 and birth_date like '%-12-25'
 order by hire_date DESC, birth_date DESC;
+
+select hire_date, first_name, last_name, birth_date from employees
+where hire_date between '1990-1-1' and '1999-12-31'
+and birth_date like '%-12-25'
+order by birth_date DESC, hire_date;
+
 select * from employees;
 # 362 employees returned. 
 # Oldest hired last: Khun Bernini
-# Youngest hired first: Alselm Cappello
+# Youngest hired first: Douadi Pettis
