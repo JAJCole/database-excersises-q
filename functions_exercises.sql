@@ -56,5 +56,3 @@ and the last two digits of the year that they were born.*/
 select * from employees;
 select lower (concat(substr(first_name, 1, 1), substr(last_name, 1,4), '_', substr(birth_date, 6,2),substr(birth_date, 3, 2))) as user_name
 from employees;
-
-
